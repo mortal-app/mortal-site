@@ -42,17 +42,13 @@
     }
 </style>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 
-
-<body class="antialiased relative text-gray-600">
-    <div class="absolute w-full min-h-screen">
-        <div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom pt-20 px-12 text-white text-center"></div>
-
-    </div>
+<body class="antialiased relative text-gray-600 ">
     <div class="relative z-10 flex min-h-screen h-auto justify-center items-center">
         <div class="relative max-w-4xl">
-            <div class="absolute z-10 inset-0 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
+            <div class="absolute z-10 inset-0 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 shadow-lg transform blur-sm -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
             <div class="relative z-20 bg-white md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl">
                 <div class="sm:flex flex-col justify-between space-y-6 py-6 md:pr-10">
                     <div>
@@ -86,35 +82,72 @@
                 <h1 class="text-6xl font-bold text-gray-800">Services</h1>
             </div>
             <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-                <div class="relative">
+
+                <div class="relative" data-tilt>
                     <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
                         <p class="text-5xl text-cyan-500">👐</p>
                         <h2 class="pt-3 font-bold text-2xl">
                             Open-source
                         </h2>
                         <p class="pt-3">
-                            The open source community is the heart of software engineering and fundamental to how we build software today.
+                            The <strong>open-source</strong> community is the <strong>heart</strong> of software engineering and fundamental to how we build <strong>software</strong> today.
                         </p>
                     </div>
                 </div>
-                <div class="relative">
+
+                <div class="relative" data-tilt>
                     <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
                         <p class="text-5xl text-cyan-500">🖥️</p>
                         <h2 class="pt-3 font-bold text-2xl">PaaS solutions</h2>
                         <p class="pt-3">
-                            We provide platform as a service solutions for a wide range of target markets which inlude e-commerce to open authentication.
+                            We provide <strong>platform as a service</strong> solutions for a wide range of target markets which include <strong>e-commerce</strong> to <strong>open authentication</strong>.
                         </p>
                     </div>
                 </div>
-                <div class="relative">
+
+                <div class="relative" data-tilt>
                     <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
-                        <p class="text-5xl text-cyan-500">🖥️</p>
-                        <h2 class="pt-3 font-bold text-2xl">Web Apps</h2>
+                        <p class="text-5xl text-cyan-500">🧰</p>
+                        <h2 class="pt-3 font-bold text-2xl">SaaS solutions</h2>
                         <p class="pt-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam quibusdam repudiandae et necessitatibus culpa libero mollitia.
+                            In addition to providing PaaS, we also deliver <strong>Software as a service</strong> and only ever expect recognition in return. Our SaaS solutions are <strong>open-source</strong> and open to <strong>anyone</strong>.
                         </p>
                     </div>
                 </div>
+
+                <div class="relative" data-tilt>
+                    <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
+                        <p class="text-5xl text-cyan-500">💬</p>
+                        <h2 class="pt-3 font-bold text-2xl">
+                            Consulting
+                        </h2>
+                        <p class="pt-3">
+                            At mortal we are open to consulting <strong>free</strong> of charge provided you are an <strong>ethical</strong> project or company, that contributes to the <strong>open-source</strong> ecosystem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative" data-tilt>
+                    <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
+                        <p class="text-5xl text-cyan-500">🎓</p>
+                        <h2 class="pt-3 font-bold text-2xl">Information</h2>
+                        <p class="pt-3">
+                            Why not grow your knowledge base with our <strong>"learn with us"</strong> library, we host a hivemind of data documenting <strong>frameworks</strong>, <strong>languages</strong>, and <strong>tricks</strong> of the software
+                            development <strong>ecosystem</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative" data-tilt>
+                    <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12">
+                        <p class="text-5xl text-cyan-500">❤️</p>
+                        <h2 class="pt-3 font-bold text-2xl">Community</h2>
+                        <p class="pt-3">
+                            Helping the community is our number <strong>one</strong> goal, by creating <strong>open-source</strong> software we are opening the gap between <strong>enterprise level</strong> software allowing smaller groups to <strong>compeat</strong>.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -123,31 +156,30 @@
     <section class="py-20 px-8">
         <div class="max-w-6xl mx-auto">
             <div class="text-center">
-                <h1 class="text-6xl font-bold text-gray-800">Work</h1>
-                <p class="pt-2">The best of my works</p>
+                <h1 class="text-6xl font-bold text-gray-800">Products</h1>
             </div>
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
                 <div class="bg-white rounded-md shadow-md lg:col-span-2">
-                    <img src="https://i.ibb.co/S3WsBXd/work1.jpg" alt="work1" class="object-cover w-full h-80" />
+                    <img src="./mockup1.webp" alt="work1" class="object-cover w-full h-80" />
                     <div class="p-8">
-                        <h3 class="font-bold text-2xl">Task Management</h3>
+                        <h3 class="font-bold text-2xl">Puppeteer</h3>
                         <p class="pt-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi minima vero sunt perferendis.
+                            Puppeteer is an all in one solution for your e-commerce sites, track all your income from <a href="https://www.amazon.co.uk/" class="text-[#6c82f0] hover:text-[#fa21f2]">Amazon</a> to <a href="https://www.shopify.co.uk/" class="text-[#6c82f0] hover:text-[#fa21f2]">Shopify</a>                            in 1 place. Analytics and AI predictions can help you manage your stock and finances.
                         </p>
-                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md shadow-md text-sm font-bold text-white">View More</a>
+                        <a href="https://puppeteer.to" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 hover:opacity-80 rounded-md shadow-md text-sm font-bold text-white">View More</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-md shadow-md">
-                    <img src="https://i.ibb.co/0ChMRxf/work2.jpg" alt="work2" class="object-cover w-full h-80" />
+                    <img src="./mockup2.webp" alt="work2" class="object-cover w-full h-80" />
                     <div class="p-8">
-                        <h3 class="font-bold text-2xl">My Team Builder</h3>
+                        <h3 class="font-bold text-2xl">Prototype Framework</h3>
                         <p class="pt-3">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Prototype gives you a simple, secure, scalable, and minimal framework. while handling complex features.
                         </p>
-                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md shadow-md text-sm font-bold text-white">View More</a>
+                        <a href="https://github.com/mortal-app/Prototype" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 hover:opacity-80 rounded-md shadow-md text-sm font-bold text-white">View More</a>
                     </div>
                 </div>
-                <div class="bg-white rounded-md shadow-md">
+                <!-- <div class="bg-white rounded-md shadow-md">
                     <img src="https://i.ibb.co/CwbrMdm/work3.jpg" alt="work3" class="object-cover w-full h-80" />
                     <div class="p-8">
                         <h3 class="font-bold text-2xl">
@@ -156,19 +188,19 @@
                         <p class="pt-3">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
-                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md shadow-md text-sm font-bold text-white">View More</a>
+                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 hover:opacity-80 rounded-md shadow-md text-sm font-bold text-white">View More</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-md shadow-md lg:col-span-2">
                     <img src="https://i.ibb.co/6ydZgDS/work4.jpg" alt="work4" class="object-cover w-full h-80" />
                     <div class="p-8">
-                        <h3 class="font-bold text-2xl">Unsplash Clone</h3>
+                        <h3 class="font-bold text-2xl">Learn With Us</h3>
                         <p class="pt-3">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi minima vero sunt perferendis.
                         </p>
-                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md shadow-md text-sm font-bold text-white">View More</a>
+                        <a href="#" class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 hover:opacity-80 rounded-md shadow-md text-sm font-bold text-white">View More</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -182,7 +214,7 @@
             </div>
         </div>
         <div class="mt-16 relative max-w-4xl mx-auto">
-            <div class="absolute z-10 inset-0 bg-gradient-to-r from-green-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"></div>
+            <div class="absolute z-10 inset-0 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 blur-sm shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-6 sm:rounded-lg"></div>
             <div class="relative z-20 bg-white rounded-md shadow-md p-12">
                 <form action="">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
@@ -191,7 +223,7 @@
                         <input type="text" placeholder="Subject" class="border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400 md:col-span-2" />
                         <textarea rows="5" placeholder="Message" class="border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400 md:col-span-2"></textarea>
                     </div>
-                    <button class="inline-block w-auto mt-4 px-6 py-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md shadow-md text-sm font-bold text-white">
+                    <button class="inline-block w-auto mt-4 px-6 py-2 bg-gradient-to-r from-[#fa21f2] to-[#6c82f0] opacity-60 hover:opacity-80 rounded-md shadow-md text-sm font-bold text-white">
               Send Message
             </button>
                 </form>
@@ -227,14 +259,15 @@
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="tilt.jquery.js"></script>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/feather-icons"></script>
-<script src="index.js"></script>
 
 <script>
+    $('.js-tilt').tilt({
+        scale: 1.2
+    })
     feather.replace()
 </script>
 
